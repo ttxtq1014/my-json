@@ -1,0 +1,28 @@
+// 简单数组
+[
+  {/* Iconfig */
+    "id": "niu2", // 唯一标识(不能重复)
+    "name": "牛二影视", // 名称
+    "type": 0, // 源类型(0: maccms, 1: JS/universal)
+    "logo": "", // 图标 URL
+    "desc": "", // 源介绍
+    "nsfw": false, // 是否为 NSFW 内容
+    "status": true, // 源状态(true: 启用, false: 禁用)
+    "api": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/", // API 地址
+    "extra": { // 额外配置
+      // ========== 通用配置 ==========
+      "jiexiUrl": "", // 视频解析接口 URL (可选，功能待完善)
+      "gfw": false, // 是否需要代理访问 (可选)
+      "searchLimit": 20, // 搜索结果每页数量 (可选，maccms默认20，JS默认10)
+      // ========== maccms 源配置特有分类 (type=0) ==========
+      "category": ""
+    }
+  }
+]
+
+// 复杂对象
+{
+  "sites": [], /* Array<Iconfig> */
+  "data": [],  /* Array<Iconfig> */
+  "lives": [], /* Array<ILiveItem> */
+}
